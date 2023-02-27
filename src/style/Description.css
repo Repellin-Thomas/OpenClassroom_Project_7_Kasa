@@ -1,0 +1,64 @@
+.description-container {
+    width: 70%;
+    background-color: #FF6060;
+    margin: auto;
+    padding-top: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.description-header {
+    display: flex;
+    align-items: center;
+    background-color: #FF6060;
+    height: 50px;
+    justify-content: space-between;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.description-name {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.description-content {
+    display: flex;
+    width: 100%;
+    color: #FF6060;
+    background-color: #F7F7F7;
+    font-weight: 400;
+    font-size: 23px;
+    padding-top: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+
+}
+
+.description-arrow-close {
+    margin-right: 20px;
+
+}
+
+.description-arrow-close:hover {
+    cursor: pointer;
+}
+
+.description-arrow-open:hover {
+    cursor: pointer;
+
+}
+
+.description-arrow-open {
+    margin-right: 20px;
+    transform: rotate(3.142rad);
+
+}
