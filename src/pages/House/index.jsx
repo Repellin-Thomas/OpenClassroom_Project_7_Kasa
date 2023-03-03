@@ -1,13 +1,20 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { houseList } from "../../datas/HousesList";
-
+import "../../style/House.css"
 
 function HouseComponent() {
-    const { pageId } = useParams()
+    const { id } = useParams()
+
+    /*
+    const currentHouse = useEffect(() => {
+        houselist.find()
+    }, [])
+*/
     return (
-        houseList.id.find((id => id == pageId)
-        )
+        <div className="house-container">{id}</div>
     )
+
 }
 
 

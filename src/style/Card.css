@@ -9,6 +9,7 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
+    margin-bottom: 75px;
 }
 
 .card-container:hover {
@@ -16,8 +17,11 @@
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.356)
 }
 
-.card-img {
 
+.card-img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
     opacity: 0.8;
 }
 
