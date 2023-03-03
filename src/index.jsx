@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Tag from './components/Tag';
 import Baner from './components/Baner';
 import reportWebVitals from './reportWebVitals';
+import HouseComponent from './pages/House';
 
 
 const router = createBrowserRouter([
@@ -21,8 +22,8 @@ const router = createBrowserRouter([
     path: "/thomas",
     element: <div>
       <Header />
-      <Baner/>
-      <Tag/>
+      <Baner />
+      <Tag />
     </div>
 
   },
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
   {
     path: "/error",
     element: <ErrorPage />
+  },
+
+  {
+    path: "/fiche-logement/:id",
+    element: <HouseComponent />
   }
 ]);
 

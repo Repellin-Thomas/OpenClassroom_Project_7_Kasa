@@ -2,15 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
 
 }
 
 
 .nav-link {
     margin-right: 50px;
-    color:  #FF6060;
+    color: #FF6060;
     font-size: 24px;
     font-weight: 500;
 }

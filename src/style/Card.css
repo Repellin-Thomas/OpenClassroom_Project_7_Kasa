@@ -1,0 +1,31 @@
+.card-container {
+    width: 26%;
+    aspect-ratio: 1/1;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-container:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.356)
+}
+
+.card-img {
+
+    opacity: 0.8;
+}
+
+.card-title {
+    width: 50%;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 25px;
+}

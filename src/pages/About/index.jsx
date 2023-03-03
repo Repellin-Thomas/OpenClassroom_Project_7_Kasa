@@ -1,6 +1,7 @@
 import Baner from "../../components/Baner"
-import  aboutBaner  from'../../assets/aboutbaner.png'
+import aboutBaner from '../../assets/aboutbaner.png'
 import DescriptionTab from "../../components/Description"
+import Header from "../../components/Header"
 import { aboutList } from "../../datas/AboutList"
 
 
@@ -8,10 +9,11 @@ function About() {
 
     return (
         <div>
-            <Baner image={aboutBaner} content=""/>
+            <Header />
+            <Baner image={aboutBaner} content="" />
             <ul>
-                {aboutList.map(({name, content})=>(
-                    <DescriptionTab name={name} content={content}/>
+                {aboutList.map(({ name, content }) => (
+                    <DescriptionTab name={name} content={content} />
                 ))}
             </ul>
         </div>
