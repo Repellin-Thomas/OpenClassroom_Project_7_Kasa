@@ -1,5 +1,31 @@
 .house-container {
-    width: 500px;
-    height: 500px;
-    background-color: aqua;
+    margin: auto;
+
+}
+
+.slider-container {
+    width: 900px;
+    margin: auto;
+}
+
+.house-title-container {
+    margin-bottom: 30px;
+}
+
+.house-title {
+    color: #FF6060;
+    font-size: 36px;
+}
+
+.house-location {
+    color: #FF6060;
+    font-size: 18px;
+}
+
+.tags-container {
+    display: flex;
+}
+
+.house-description {
+    display: flex;
 }

@@ -2,10 +2,11 @@ import '../../style/Tag.css'
 
 
 
-function Tag(){
+function Tag(props) {
+    const tag = props.tagname
 
-    return(
-        <div className='tag-container'>tag</div>
+    return (
+        <div className='tag-container'>{tag}</div>
     )
 
 }

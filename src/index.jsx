@@ -6,8 +6,7 @@ import About from './pages/About';
 import ErrorPage from './pages/Error';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Tag from './components/Tag';
-import Baner from './components/Baner';
+import Slider from './components/Slider';
 import reportWebVitals from './reportWebVitals';
 import HouseComponent from './pages/House';
 
@@ -22,8 +21,7 @@ const router = createBrowserRouter([
     path: "/thomas",
     element: <div>
       <Header />
-      <Baner />
-      <Tag />
+      <Slider />
     </div>
 
   },

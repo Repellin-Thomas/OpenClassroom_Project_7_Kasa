@@ -13,7 +13,7 @@ function About() {
             <Baner image={aboutBaner} content="" />
             <ul>
                 {aboutList.map(({ name, content }) => (
-                    <DescriptionTab name={name} content={content} />
+                    <DescriptionTab name={name} content={content} size="large" />
                 ))}
             </ul>
         </div>
