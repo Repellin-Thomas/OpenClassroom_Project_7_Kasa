@@ -1,4 +1,4 @@
-import '../../style/Tag.css'
+import './Tag.css'
 
 
 

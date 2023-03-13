@@ -1,0 +1,17 @@
+.host-card-container {
+    display: flex;
+    align-items: center;
+}
+
+.host-name {
+    width: 40%;
+    text-align: right;
+    margin-right: 10px;
+    color: #FF6060;
+    font-size: 18px;
+}
+
+.host-img {
+    width: 64px;
+    border-radius: 32px;
+}

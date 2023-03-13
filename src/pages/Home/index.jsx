@@ -2,7 +2,7 @@ import Header from "../../components/Header";
 import Baner from "../../components/Baner";
 import Card from "../../components/Card";
 import homeBaner from "../../assets/homebaner.png"
-import "../../style/Home.css"
+import "./Home.css"
 import { houseList } from "../../datas/HousesList";
 
 

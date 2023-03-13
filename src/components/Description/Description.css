@@ -38,13 +38,12 @@
 }
 
 .description-content {
-    display: flex;
     width: 100%;
     color: #FF6060;
     background-color: #f7f7f700;
     font-weight: 400;
     font-size: 23px;
-    padding-top: 10px;
+    padding: 10px;
     border-radius: 5px;
     z-index: 1;
 

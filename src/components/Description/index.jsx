@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../../style/Description.css'
+import './Description.css'
 import arrow from '../../assets/descriptionarrow.png'
 
 
