@@ -1,12 +1,9 @@
 .description-container {
-    background-color: #f7f7f7;
-    margin: auto;
-    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
 
 }
 
@@ -15,7 +12,7 @@
 }
 
 .small {
-    width: 35%;
+    width: 45%;
 }
 
 
@@ -26,8 +23,8 @@
     background-color: #FF6060;
     height: 50px;
     justify-content: space-between;
-    border-radius: 5px;
-    z-index: 2;
+    border-radius: 10px;
+    z-index: 1;
 }
 
 .description-name {
@@ -38,16 +35,13 @@
 }
 
 .description-content {
-    width: 100%;
     color: #FF6060;
-    background-color: #f7f7f700;
     font-weight: 400;
     font-size: 23px;
-    padding: 10px;
     border-radius: 5px;
-    z-index: 1;
-
-
+    background-color: #f7f7f7;
+    margin-top: -10px;
+    padding: 20px 10px 10px 10px;
 }
 
 .description-arrow-close {

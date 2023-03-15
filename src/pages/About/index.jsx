@@ -1,9 +1,9 @@
-import Baner from "../../components/Baner"
+import Baner from '../../components/Baner'
 import aboutBaner from '../../assets/aboutbaner.png'
-import DescriptionTab from "../../components/Description"
-import Header from "../../components/Header"
-import { aboutList } from "../../datas/AboutList"
-
+import DescriptionTab from '../../components/Description'
+import Header from '../../components/Header'
+import { aboutList } from '../../datas/AboutList'
+import './About.css'
 
 function About() {
 

@@ -1,6 +1,7 @@
 .host-card-container {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .host-name {
@@ -12,6 +13,7 @@
 }
 
 .host-img {
+    margin-left: 10px;
     width: 64px;
     border-radius: 32px;
 }

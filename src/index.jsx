@@ -8,7 +8,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
 import HouseComponent from './pages/House';
-import HostCard from './components/HostCard';
+
+
 
 
 const router = createBrowserRouter([
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
     path: "/thomas",
     element: <div>
       <Header />
-      <HostCard />
+
     </div>
 
   },

@@ -9,7 +9,10 @@ function DescriptionTab(props) {
 
     const size = props.size
     const name = props.name;
-    const content = props.content;
+    let content = props.content;
+    if (typeof content == 'string') {
+        content = [content]
+    }
     const customClass = "description-container " + size;
     const [isOpen, setIsOpen] = useState(false)
 
@@ -19,7 +22,7 @@ function DescriptionTab(props) {
                 <span className='description-name'>{name}</span>
                 <img src={arrow} className='description-arrow-open' alt='description-déroulante' onClick={() => setIsOpen(false)} />
             </div>
-            <div className='description-content'>{content}</div>
+            <div className='description-content'>{content.map((e, index) => <span key={index}>{e}</span>)}</div>
         </div >
 
     ) : (

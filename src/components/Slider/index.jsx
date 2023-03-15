@@ -1,27 +1,20 @@
-import "./Slider.css"
-import React from "react"
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import React from 'react'
+import { houseList } from '../../datas/HousesList'
+
+function Slider(props) {
+
+    const slides = props.slides
 
 
-function Slider() {
-
-    const baseUrl = "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
-    return (<Carousel>
-        <div><img src={baseUrl} alt="" />
-
+    return (
+        <div>
+            {slides.map(({ slide, index }) => {
+                return (
+                    <img key={index} src={slide} alt="" />
+                )
+            })}
         </div>
-        <div><img src={baseUrl} alt="" />
-
-        </div>
-        <div><img src={baseUrl} alt="" />
-
-        </div>
-
-    </Carousel>)
+    )
 }
-
-
-
 
 export default Slider

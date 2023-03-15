@@ -7,26 +7,33 @@ import Slider from "../../components/Slider";
 import Tag from "../../components/Tag";
 import DescriptionTab from "../../components/Description";
 import HostCard from "../../components/HostCard";
+import Rating from "../../components/Rating";
 import "./House.css"
 
 function HouseComponent() {
     const { id } = useParams()
     const [currentHouse, setItem] = useState();
+    let isLoading = true;
+
 
 
     useEffect(() => {
         const foundHouse = houseList.find((house) => house.id === id);
 
         setItem(foundHouse);
+        isLoading = false
+        if (!foundHouse) {
+            return <ErrorPage />;
+        }
+
     }, []);
     if (!currentHouse) {
-        return <ErrorPage />;
+        return (<div className="placeholder"></div>)
     }
     return (
-
         <div className="house-container">
             <Header />
-            <div className="slider-container"><Slider /></div>
+            <Slider slides={currentHouse.pictures} />
             <div className="house-header">
                 <div className="house-title-container">
                     <div className="house-title">{currentHouse.title}</div>
@@ -37,14 +44,15 @@ function HouseComponent() {
                         ))}
                     </div>
                 </div>
-                <HostCard name={currentHouse.host.name} picture={currentHouse.host.picture} />
+                <div>
+                    <HostCard name={currentHouse.host.name} picture={currentHouse.host.picture} />
+                    <Rating rating={currentHouse.rating} />
+                </div>
             </div>
+
             <div className="house-description">
                 <DescriptionTab size="small" name="Description" content={currentHouse.description} />
-
-            </div>
-            <div className="house-description">
-                <DescriptionTab size="small" name="Équipements" content="équipements" />
+                <DescriptionTab size="small" name="Équipements" content={currentHouse.equipments} />
             </div>
 
         </div>
