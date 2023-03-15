@@ -22,7 +22,7 @@ function DescriptionTab(props) {
                 <span className='description-name'>{name}</span>
                 <img src={arrow} className='description-arrow-open' alt='description-déroulante' onClick={() => setIsOpen(false)} />
             </div>
-            <div className='description-content'>{content.map((e, index) => <span key={index}>{e}</span>)}</div>
+            <div className='description-content-container'>{content.map((e, index) => <span className="description-content" key={index}>{e}</span>)}</div>
         </div >
 
     ) : (

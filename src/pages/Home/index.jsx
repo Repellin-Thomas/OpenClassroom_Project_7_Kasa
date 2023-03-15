@@ -10,7 +10,7 @@ import { houseList } from "../../datas/HousesList";
 function Home() {
   const banerContent = "Chez vous, partout et ailleurs"
   return (
-    <div>
+    <div className="home-container">
       <Header />
       <Baner image={homeBaner} content={banerContent} />
       <ul className="cards-container">

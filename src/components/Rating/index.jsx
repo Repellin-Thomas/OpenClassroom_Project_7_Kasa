@@ -14,10 +14,10 @@ function Rating(props) {
     return (
         <div className="rating-container">
             {fullStarsArray.map((fullStar, index) => {
-                return (<div key={index}>{fullStar}</div>)
+                return (<div className="star-container" key={index}>{fullStar}</div>)
             })}
             {emptyStarsArray.map((emptyStar, index) => {
-                return (<div key={index}>{emptyStar}</div>)
+                return (<div className="star-container" key={index}>{emptyStar}</div>)
             })}
 
         </div>)
