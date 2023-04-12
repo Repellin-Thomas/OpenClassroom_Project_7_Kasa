@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { houseList } from "../../datas/HousesList";
-import Header from "../../components/Header";
-import ErrorPage from "../Error";
 import Slider from "../../components/Slider";
 import Tag from "../../components/Tag";
 import DescriptionTab from "../../components/Description";
@@ -10,29 +8,35 @@ import HostCard from "../../components/HostCard";
 import Rating from "../../components/Rating";
 import "./House.css"
 
+
+
+
 function HouseComponent() {
     const { id } = useParams()
     const [currentHouse, setItem] = useState();
-    let isLoading = true;
+    const navigate = useNavigate();
 
 
+    // if you want to show the loader when React loads data again
 
     useEffect(() => {
-        const foundHouse = houseList.find((house) => house.id === id);
 
+        const foundHouse = houseList.find((house) => house.id === id);
         setItem(foundHouse);
-        isLoading = false
+
+
         if (!foundHouse) {
-            return <ErrorPage />;
+            navigate("/*")
         }
 
     }, []);
-    if (!currentHouse) {
-        return (<div className="placeholder"></div>)
-    }
-    return (
+
+
+
+
+
+    return currentHouse ? (
         <div className="house-container">
-            <Header />
             <Slider slides={currentHouse.pictures} />
             <div className="house-header">
                 <div className="house-title-container">
@@ -57,7 +61,7 @@ function HouseComponent() {
 
         </div>
 
-    )
+    ) : (<div className="placeholder"></div>)
 
 }
 

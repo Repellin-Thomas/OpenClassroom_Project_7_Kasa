@@ -2,7 +2,7 @@
     width: 26%;
     aspect-ratio: 1/1;
     background-color: black;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-top: 70px;
     display: flex;
     align-items: center;
@@ -26,10 +26,21 @@
 }
 
 .card-title {
-    width: 50%;
+    width: 80%;
     color: white;
     position: absolute;
-    bottom: 10%;
+    top: 85%;
     left: 5%;
-    font-size: 25px;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 699px) {
+
+
+    .card-container {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }

@@ -7,6 +7,7 @@ function Baner(props) {
     const content = props.content
     const image = props.image
 
+
     return (
         <div className='baner-container'>
             <img src={image} alt='bannière de la page' className='baner-img' />

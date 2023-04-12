@@ -1,14 +1,14 @@
 .description-container {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
 
 }
 
 .large {
-    width: 70%;
+    width: 80%;
 }
 
 .small {
@@ -67,4 +67,35 @@
     margin-right: 20px;
     transform: rotate(3.142rad);
 
+}
+
+
+
+@media screen and (max-width: 699px) {
+
+    .description-header {
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .large {
+        width: 100%;
+    }
+
+    .description-name {
+        font-size: 13px;
+    }
+
+    .description-content-container {
+        padding-top: 20px;
+        font-size: 11px;
+    }
+
+    .description-arrow-close {
+        scale: 0.8;
+    }
+
+    .description-arrow-open {
+        scale: 0.8;
+    }
 }

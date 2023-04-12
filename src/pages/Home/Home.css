@@ -10,8 +10,27 @@
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: #F7F7F7;
-    width: 80%;
+    width: 100%;
     margin: auto;
     border-radius: 25px;
     margin-bottom: 50px;
+    padding: 0px;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+
+
+    .home-container {
+        width: 90%;
+        margin: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .cards-container {
+        background-color: inherit;
+    }
 }

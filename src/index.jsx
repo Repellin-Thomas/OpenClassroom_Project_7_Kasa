@@ -1,18 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider, } from "react-router-dom";
-import Home from './pages/Home';
-import About from './pages/About';
-import ErrorPage from './pages/Error';
-import Header from './components/Header';
-import Footer from './components/Footer';
+//import { createBrowserRouter, RouterProvider, } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
-import HouseComponent from './pages/House';
+import App from './App';
 
 
 
 
-const router = createBrowserRouter([
+/*const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />
@@ -42,13 +38,15 @@ const router = createBrowserRouter([
     element: <HouseComponent />
   }
 ]);
-
+*/
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-    <Footer />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 

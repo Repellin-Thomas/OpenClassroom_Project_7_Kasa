@@ -11,7 +11,7 @@ function Home() {
   const banerContent = "Chez vous, partout et ailleurs"
   return (
     <div className="home-container">
-      <Header />
+
       <Baner image={homeBaner} content={banerContent} />
       <ul className="cards-container">
         {houseList.map(({ id, title, cover }) => (

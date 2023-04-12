@@ -1,10 +1,8 @@
 .house-container {
     padding-left: 50px;
     padding-right: 50px;
-
+    flex-grow: 1;
 }
-
-
 
 .house-header {
     display: flex;
@@ -40,5 +38,6 @@
 
 
 .placeholder {
+    height: 100%;
     flex-grow: 1;
 }

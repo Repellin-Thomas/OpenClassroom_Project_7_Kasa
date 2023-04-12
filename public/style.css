@@ -4,6 +4,8 @@ html {
 
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Montserrat;
     height: 100%;
 }
