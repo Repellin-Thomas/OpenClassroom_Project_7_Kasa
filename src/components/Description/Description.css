@@ -82,6 +82,10 @@
         width: 100%;
     }
 
+    .small {
+        width: 100%;
+    }
+
     .description-name {
         font-size: 13px;
     }

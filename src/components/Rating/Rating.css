@@ -6,3 +6,12 @@
 .star-container {
     margin-left: 10px;
 }
+
+
+@media screen and (max-width: 700px) {
+
+
+    .star-container {
+        scale: 0.7;
+    }
+}

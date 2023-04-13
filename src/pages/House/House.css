@@ -1,18 +1,18 @@
 .house-container {
-    padding-left: 50px;
-    padding-right: 50px;
-    flex-grow: 1;
+    width: 95%;
+    margin: auto;
 }
 
 .house-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .house-title-container {
-    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .house-title {
@@ -40,4 +40,47 @@
 .placeholder {
     height: 100%;
     flex-grow: 1;
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    .house-container {
+        width: 90%;
+        margin: auto;
+    }
+
+
+
+    .house-header {
+        align-items: inherit;
+        flex-direction: column;
+    }
+
+    .house-location {
+
+        font-size: 14px;
+    }
+
+    .house-title {
+        font-size: 18px;
+    }
+
+    .tags-container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .house-description {
+        flex-direction: column;
+    }
+
+    .host-info-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
 }

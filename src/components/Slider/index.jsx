@@ -20,20 +20,45 @@ function Slider(props) {
     if (!Array.isArray(slides) || slides.lenght <= 0) {
         return null
     }
-    return (
-        <div className="slider-container">
-            <img src={leftArrow} alt="left arrow" className="left-arrow" onClick={prevSlide} />
-            <img src={rightArrow} alt="right arrow" className="right-arrow" onClick={nextSlide} />
-            {slides.map((slide, index) => {
-                return (
-                    <div className={index === currentSlide ? 'slide active' : 'slide'} key={index}>
-                        {index === currentSlide && (<img key={index} src={slide} alt="" className="slider-image" />)}
 
-                    </div>
-                )
-            })}
-        </div>
-    )
+
+    return length === 1 ? (<div className="slider-container">
+        {slides.map((slide, index) => {
+            return (
+                <div className={index === currentSlide ? 'slide active' : 'slide'} key={index}>
+                    {index === currentSlide && (<img key={index} src={slide} alt="" className="slider-image" />)}
+
+                </div>
+            )
+        })}</div>
+
+
+    ) :
+
+        (
+            <div className="slider-container">
+                <img src={leftArrow} alt="left arrow" className="left-arrow" onClick={prevSlide} />
+                <img src={rightArrow} alt="right arrow" className="right-arrow" onClick={nextSlide} />
+                {slides.map((slide, index) => {
+                    return (
+                        <div className={index === currentSlide ? 'slide active' : 'slide'} key={index}>
+                            {index === currentSlide && (<img key={index} src={slide} alt="" className="slider-image" />)}
+                            <div className="slide-number">{index + 1}/{length}</div>
+                        </div>
+
+
+                    )
+                })}
+                {slides.map((slide, index) => {
+                    return (
+                        <div className={index === currentSlide ? "slide-number active" : "slide-number"} key={index}>
+                            {index + 1}/{length}
+                        </div>
+                    )
+                })}
+
+            </div>
+        )
 }
 
 export default Slider

@@ -48,7 +48,7 @@ function HouseComponent() {
                         ))}
                     </div>
                 </div>
-                <div>
+                <div className="host-info-container">
                     <HostCard name={currentHouse.host.name} picture={currentHouse.host.picture} />
                     <Rating rating={currentHouse.rating} />
                 </div>
