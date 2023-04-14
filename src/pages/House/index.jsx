@@ -43,8 +43,8 @@ function HouseComponent() {
                     <div className="house-title">{currentHouse.title}</div>
                     <div className="house-location">{currentHouse.location}</div>
                     <div className="tags-container">
-                        {currentHouse.tags.map((tag) => (
-                            <Tag tagname={tag} />
+                        {currentHouse.tags.map((tag, index) => (
+                            <Tag tagname={tag} key={index} />
                         ))}
                     </div>
                 </div>

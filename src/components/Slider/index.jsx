@@ -25,7 +25,7 @@ function Slider(props) {
     return length === 1 ? (<div className="slider-container">
         {slides.map((slide, index) => {
             return (
-                <div className={index === currentSlide ? 'slide active' : 'slide'} key={index}>
+                <div className={index === currentSlide ? "slide active" : "slide"} key={index}>
                     {index === currentSlide && (<img key={index} src={slide} alt="" className="slider-image" />)}
 
                 </div>
@@ -41,12 +41,10 @@ function Slider(props) {
                 <img src={rightArrow} alt="right arrow" className="right-arrow" onClick={nextSlide} />
                 {slides.map((slide, index) => {
                     return (
-                        <div className={index === currentSlide ? 'slide active' : 'slide'} key={index}>
+                        <div className={index === currentSlide ? "slide active" : "slide"} key={index}>
                             {index === currentSlide && (<img key={index} src={slide} alt="" className="slider-image" />)}
                             <div className="slide-number">{index + 1}/{length}</div>
                         </div>
-
-
                     )
                 })}
                 {slides.map((slide, index) => {

@@ -17,8 +17,12 @@
     font-size: 24px;
     font-weight: 500;
     white-space: nowrap;
+    text-decoration: none;
 }
 
+.nav-link:hover {
+    text-decoration: underline;
+}
 
 @media screen and (max-width:700px) {
 
@@ -32,6 +36,7 @@
 
     .nav-link {
         font-size: 16px;
+
     }
 
     .logo {

@@ -6,7 +6,7 @@ function Tag(props) {
     const tag = props.tagname
 
     return (
-        <div className='tag-container'>{tag}</div>
+        <div className="tag-container">{tag}</div>
     )
 
 }

@@ -10,8 +10,8 @@ function About() {
         <div className="about-container">
             <Baner image={aboutBaner} content="" category="custom-baner" />
             <ul className="tabs-container">
-                {aboutList.map(({ name, content }) => (
-                    <DescriptionTab name={name} content={content} size="large" />
+                {aboutList.map(({ name, content }, index) => (
+                    <DescriptionTab name={name} content={content} size="large" key={index} />
                 ))}
             </ul>
         </div>
