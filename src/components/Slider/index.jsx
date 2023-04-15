@@ -43,7 +43,7 @@ function Slider(props) {
                     return (
                         <div className={index === currentSlide ? "slide active" : "slide"} key={index}>
                             {index === currentSlide && (<img key={index} src={slide} alt="" className="slider-image" />)}
-                            <div className="slide-number">{index + 1}/{length}</div>
+
                         </div>
                     )
                 })}

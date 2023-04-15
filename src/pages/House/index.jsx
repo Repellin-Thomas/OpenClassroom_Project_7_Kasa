@@ -17,7 +17,7 @@ function HouseComponent() {
     const navigate = useNavigate();
 
 
-    // if you want to show the loader when React loads data again
+
 
     useEffect(() => {
 
