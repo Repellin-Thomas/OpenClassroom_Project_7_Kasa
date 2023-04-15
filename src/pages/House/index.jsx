@@ -13,7 +13,7 @@ import "./House.css"
 
 function HouseComponent() {
     const { id } = useParams()
-    const [currentHouse, setItem] = useState();
+    const [currentHouse, setCurrentHouse] = useState();
     const navigate = useNavigate();
 
 
@@ -22,7 +22,7 @@ function HouseComponent() {
     useEffect(() => {
 
         const foundHouse = houseList.find((house) => house.id === id);
-        setItem(foundHouse);
+        setCurrentHouse(foundHouse);
 
 
         if (!foundHouse) {

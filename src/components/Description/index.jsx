@@ -10,7 +10,7 @@ function DescriptionTab(props) {
     const size = props.size
     const name = props.name;
     let content = props.content;
-    const key = props.key
+
     if (typeof content == 'string') {
         content = [content]
     }
