@@ -7,39 +7,6 @@ import App from './App';
 
 
 
-
-/*const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />
-  },
-
-  {
-    path: "/thomas",
-    element: <div>
-      <Header />
-
-    </div>
-
-  },
-
-  {
-    path: "/à-propos",
-    element: <About />
-  },
-
-  {
-    path: "/*",
-    element: <ErrorPage />
-  },
-
-  {
-    path: "/fiche-logement/:id",
-    element: <HouseComponent />
-  }
-]);
-*/
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
